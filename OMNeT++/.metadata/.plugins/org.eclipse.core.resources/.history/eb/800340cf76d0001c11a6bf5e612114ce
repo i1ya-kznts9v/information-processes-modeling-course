@@ -1,0 +1,29 @@
+#include "SinkStat.h"
+
+Define_Module(SinkStat);
+
+void SinkStat::initialize()
+{
+    Sink::initialize();
+    profit = 0;
+}
+
+void SinkStat::handleMessage(cMessage *msg)
+{
+    Sink::handleMessage(msg);
+    profit += intuniform(500,1500);
+}
+
+void SinkStat::finish()
+{
+    cModule* ptr =
+    this->getParentModule()->getSubmodule("resourcePool");
+    cModule* ptr1 =
+    this->getParentModule()->getSubmodule("resourcePool1");
+    int numCoders = ptr->par("amount");
+    int numTesters = ptr1->par("amount");
+    profit -= 1000 * numCoders + 1200 * numTesters + 10000;
+    EV << "Coders=" << numCoders << ", Testers=" << numTesters;
+    EV << ", Profit=" << profit << endl;
+    Sink::finish();
+}

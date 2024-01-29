@@ -1,0 +1,22 @@
+Iteration run 0: $i=1, $0=12-1, $repetition=0
+Ordering=1, Delivery=11, Profit=21487
+Iteration run 1: $i=2, $0=12-2, $repetition=0
+Ordering=2, Delivery=10, Profit=41990
+Iteration run 2: $i=3, $0=12-3, $repetition=0
+Ordering=3, Delivery=9, Profit=59498
+Iteration run 3: $i=4, $0=12-4, $repetition=0
+Ordering=4, Delivery=8, Profit=59201
+Iteration run 4: $i=5, $0=12-5, $repetition=0
+Ordering=5, Delivery=7, Profit=59342
+Iteration run 5: $i=6, $0=12-6, $repetition=0
+Ordering=6, Delivery=6, Profit=60506
+Iteration run 6: $i=7, $0=12-7, $repetition=0
+Ordering=7, Delivery=5, Profit=60980
+Iteration run 7: $i=8, $0=12-8, $repetition=0
+Ordering=8, Delivery=4, Profit=58959
+Iteration run 8: $i=9, $0=12-9, $repetition=0
+Ordering=9, Delivery=3, Profit=49399
+Iteration run 9: $i=10, $0=12-10, $repetition=0
+Ordering=10, Delivery=2, Profit=30791
+Iteration run 10: $i=11, $0=12-11, $repetition=0
+Ordering=11, Delivery=1, Profit=15989

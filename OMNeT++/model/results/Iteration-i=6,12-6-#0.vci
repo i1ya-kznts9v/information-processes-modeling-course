@@ -1,0 +1,42 @@
+file 14051 1652807187                                           
+version 2
+run Iteration-5-20220517-20:06:27-11436
+attr configname Iteration
+attr datetime 20220517-20:06:27
+attr experiment Iteration
+attr inifile omnetpp.ini
+attr iterationvars "$i=6, $0=12-6"
+attr iterationvarsf i=6,12-6-
+attr measurement "$i=6, $0=12-6"
+attr network Network
+attr processid 11436
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 5
+attr seedset 5
+itervar i 6
+param **.resource_ordering.amount 6
+param **.resource_delivery.amount 12-6
+param **.source.interArrivalTime uniform(8min,6min)
+param **.allocate_ordering.resourceModuleName "\"resource_ordering\""
+param **.delay_ordering.delay uniform(24min,16min)
+param **.deallocate_ordering.resourceModuleName "\"resource_ordering\""
+param **.allocate_delivery.resourceModuleName "\"resource_delivery\""
+param **.delay_delivery.delay uniform(32min,20min)
+param **.deallocate_delivery.resourceModuleName "\"resource_delivery\""
+
+vector 0 Network.allocate_ordering queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Network.allocate_delivery queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 Network.sinkStat lifeTime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived jobs, vector"
+attr unit s
+0	1341 9 0 0 0 0 1 0 0 0 0
+1	1350 9 0 0 0 0 1 0 0 0 0
+2	1359 12690 33 6550 2690 276953 652 2220 3326 1799650 5007105508
+
